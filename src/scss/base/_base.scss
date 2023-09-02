@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular:700);
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  font-family: $font-accent;
+  color: $white;
+  background-color: $dark;
+
+  font-size: 16px;
+}
+
+a {
+  color: $white;
+  transition: color ease-in 0.2s;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.title-2 {
+  font-family: $font-main;
+  color: $accent;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
+}
+
+.link-bold {
+  color: $accent;
+  font-weight: 700;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+@import url(../base/_mixins.scss);
